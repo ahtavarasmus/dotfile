@@ -47,15 +47,19 @@ nnoremap gp :bp<enter>
 nnoremap ga <C-^>
 nnoremap <C-j> <C-d>zz
 nnoremap <C-k> <C-u>zz
-nnoremap <leader>ä :terminal<enter>:file localhost_terminal<enter>i<enter>source venv/bin/activate<enter>flask run<enter><C-\><C-n>:bp<enter>
-nnoremap <leader>t :b localhost_terminal<enter>i<C-c>flask run<enter><C-\><C-n>:bp<enter>
+nnoremap <leader>ä :terminal<enter>:file localhost_terminal<enter>
+nnoremap <leader>t :b localhost_terminal<enter>i<C-c><Up><enter><C-\><C-n>
 vnoremap <C-j> <C-d>zz
 vnoremap <C-k> <C-u>zz
 nnoremap gy ggVG"+y
 vnoremap gy "+y
 nnoremap <leader>c :!g++ -std=c++20 problem.cpp<enter>
 nnoremap <leader>r <enter>:!./a.out<enter>
+nnoremap <leader>m :NERDTreeToggle<enter>
 tnoremap <Esc> <C-\><C-n>
+nnoremap : :<C-f>i
+nnoremap n nzz
+nnoremap N Nzz
 
 
 
